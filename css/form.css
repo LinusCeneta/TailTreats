@@ -1,0 +1,129 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+:root {
+    --green-color: green;
+    --light-green-color: l rgb(98, 193, 98);
+    --orange-color: orange;
+    --light-orange-color: rgb(224, 186, 114);
+    --text-color: black;
+    --bg-color: white;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+p{
+    color: red;
+}
+img {
+    width: 100%;
+}
+/*Header CSS*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 20px 100px;
+    transition: 0.5s;
+}
+
+.logo {
+    max-width: 90px;
+	height: auto;
+	padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+
+}
+.logo .bx {
+    font-size: 24px;
+    color: var(--orange-color);
+}
+
+/*Registration Form Container*/
+.wrapper{
+    margin-top: 20%;
+    width:700px;
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 5.0);
+    padding-right: 150px;
+}
+
+/* Registration Form Design */
+
+.column1 {
+  float: left;
+  padding-right: 10%;
+  padding-left: 5%;
+}
+.column2{
+  float: right;
+  padding-right: 5%;
+  
+}
+.column3{
+  float: left;
+  
+}
+.right{
+	padding-left:96.6%;
+	padding-top: 1%;
+}
+.right a{
+	font-size: 150%;
+	background-color: transparent;
+	color:black;
+	padding: 12px;
+
+	text-decoration: none;
+}
+label {
+	font-size: 150%;
+	font-weight:400 ;
+}
+input{
+	font-size: 150%;
+}
+.column2 button{
+	background-color: lightgreen;
+	color: white;
+	font-size: 150%;
+        padding-left: 37%;
+        padding-right: 37%;
+}
+.align h2{
+    font-size: 150%;
+    padding-left: 5%;
+}
+#username.error,#password.error,#confirmpassword.error,#firstname.error,#middlename.error,#lastname.error,#address.error,#birthday.error,#mobilenumber.error{
+    border: 3px solid red;
+}
+#username.success,#password.success,#confirmpassword.success,#firstname.success,#middlename.success,#lastname.success,#address.success,#birthday.success,#mobilenumber.success{
+    border: 3px solid lightgreen;
+}
